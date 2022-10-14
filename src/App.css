@@ -131,18 +131,218 @@ article > ul {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.list-group {
+.sidenav {
   background: #ffffff;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  width: 283px;
+  height: 1695px;
 }
+.sidenav > :first-child {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.sidenav > :first-child > :nth-child(2) {
+  margin: 0 10px;
+}
+
 .list-group-item {
   border: 0;
-  padding: 15px 10px;
-  margin-left: 20px !important;
+  padding: 20px 10px;
+  margin-left: 30px !important;
   color: #213f7d;
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.list-group-item > :not(:first-child) {
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.list-group-item.category {
+  margin-bottom: -20px;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #545f7d;
+}
+
+col-sm-3 > .card {
+  background: #ffffff;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  width: 240px;
+  height: 160px;
+  box-sizing: border-box;
+}
+#user-dash {
+  font-family: "Work Sans";
+  font-style: normal;
+
+  line-height: 28px;
+  margin: 40px 0;
+  color: #213f7d;
+}
+.card-text.first {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: #545f7d;
+}
+.card-text.second {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+
+  color: #213f7d;
+}
+.table.dashboard {
+  background: #ffffff;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 50px;
+
+  height: 640px;
+}
+td {
+  padding-top: 28px !important;
+}
+.table > :not(:first-child) {
+  border-top: 0;
+  padding: 15px 0;
+}
+.table-head {
+  height: 100px;
+}
+
+tbody > :first-child {
+  border-top-style: none !important;
+  border-top-color: #fff;
+}
+
+.status-dash > p {
+  height: 30px;
+  border-radius: 100px;
+}
+
+.status-dash > p > span {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  display: block;
+  padding-top: 6.5px;
+}
+
+.table-row {
+  height: 80px;
+}
+.table-row > td {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: #545f7d;
+}
+
+th {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 14px;
+  padding-bottom: 40px !important;
+  text-transform: uppercase;
+  color: #545f7d;
+}
+
+.paginate {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-one,
+.page-two {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.page-one > :nth-child(2) {
+  background: rgba(33, 63, 125, 0.1);
+  border-radius: 4px;
+  height: 30px;
+  width: 80px;
+  margin: 0 15px;
+  text-align: center;
+}
+
+.page-one > :nth-child(2) > p > img {
+  margin-left: 15px;
+}
+.page-one > div {
+  font-family: "Work Sans";
+
+  color: #545f7d;
+}
+.page-one > :nth-child(2) > p {
+  margin-top: 3px;
+  font-family: "Work Sans";
+  font-weight: 600;
+  color: #213f7d;
+}
+
+.page-two > div {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 19px;
+  opacity: 0.6;
+  color: #545f7d;
+  margin-left: 25px;
+}
+
+.page-two > :first-child,
+.page-two > :last-child {
+  background: rgba(33, 63, 125, 0.1);
+  border-radius: 4px;
+  text-align: center;
+  height: 24px;
+  width: 24px;
+  opacity: 1;
+}
+.page-two > :first-child > p,
+.page-two > :last-child > p {
+  margin-top: 3px;
+  font-family: "Work Sans";
+  font-weight: 600;
+  color: #213f7d;
+}
+
+.page-two > :nth-child(2) {
+  opacity: 1;
+  font-weight: 500;
 }

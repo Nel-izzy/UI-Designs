@@ -2,85 +2,156 @@ import React from "react";
 
 const Sidenav = () => {
   return (
-    <ul class="list-group">
+    <ul class="list-group sidenav">
       <li class="list-group-item">
-        <img src="briefcase.png" alt="" /> Switch Organization <span>&or;</span>
+        <p>
+          <img src="briefcase.png" alt="" height={16} />
+        </p>{" "}
+        <p> Switch Organization</p>{" "}
+        <p>
+          <img src="caret-1.png" alt="" />
+        </p>
       </li>
       <li class="list-group-item">
-        <img src="home.png" alt="" /> Dashboard
+        <p>
+          <img src="home.png" alt="" />
+        </p>{" "}
+        <p>Dashboard</p>
       </li>
-      <li class="list-group-item">Customers</li>
+      <li class="list-group-item category">Customers</li>
       <li class="list-group-item" style={userStyle}>
-        <img src="user-friends.png" alt="" /> Users
+        <p>
+          <img src="user-friends.png" alt="" />
+        </p>{" "}
+        <p>Users</p>
       </li>
       <li class="list-group-item">
-        <img src="users.png" alt="" /> Guarantors
+        <p>
+          <img src="users.png" alt="" />
+        </p>{" "}
+        <p>Guarantors</p>
       </li>
       <li class="list-group-item">
-        <img src="sack.png" alt="" /> Loans
+        <p>
+          <img src="sack.png" alt="" height={16} />
+        </p>{" "}
+        <p>Loans</p>
       </li>
       <li class="list-group-item">
-        <img src="handshake-regular.png" alt="" /> Decision Models
+        <p>
+          <img src="handshake-regular.png" alt="" />
+        </p>{" "}
+        <p> Decision Models</p>
       </li>
       <li class="list-group-item">
-        <img src="piggy-bank.png" alt="" /> Savings
+        <p>
+          <img src="piggy-bank.png" alt="" />
+        </p>{" "}
+        <p>Savings</p>
       </li>
       <li class="list-group-item">
-        <img src="loan.png" alt="" /> Loan Requests
+        <p>
+          <img src="loan.png" alt="" />{" "}
+        </p>
+        <p> Loan Requests</p>
       </li>
       <li class="list-group-item">
-        <img src="user-check.png" alt="" /> Whitelist
+        <p>
+          <img src="user-check.png" alt="" />{" "}
+        </p>
+        <p> Whitelist</p>
       </li>
       <li class="list-group-item">
-        <img src="user-times.png" alt="" /> Karma
+        <p>
+          <img src="user-times.png" alt="" />{" "}
+        </p>
+        <p> Karma</p>
       </li>
-      <li class="list-group-item">Businesses</li>
+      <li class="list-group-item category">Businesses</li>
       <li class="list-group-item">
-        <img src="briefcase.png" alt="" /> Organization
-      </li>
-      <li class="list-group-item">
-        <img src="loan.png" alt="" />
-        Loan Products
-      </li>
-      <li class="list-group-item">
-        <img src="bank.png" alt="" /> Savings Products
-      </li>
-      <li class="list-group-item">
-        <img src="coins-solid.png" alt="" /> Fees and Charges
+        <p>
+          {" "}
+          <img src="briefcase.png" alt="" />{" "}
+        </p>
+        <p> Organization </p>
       </li>
       <li class="list-group-item">
-        <img src="transaction.png" alt="" />
-        Transactions
+        <p>
+          <img src="loan.png" alt="" />
+        </p>{" "}
+        <p> Loan Products </p>
       </li>
       <li class="list-group-item">
-        <img src="galaxy.png" alt="" /> Services
+        <p>
+          {" "}
+          <img src="bank.png" alt="" height={16} />{" "}
+        </p>
+        <p> Savings Products </p>
       </li>
       <li class="list-group-item">
-        <img src="user-cog.png" alt="" /> Service Accounts
+        <p>
+          <img src="coins-solid.png" alt="" />
+        </p>{" "}
+        <p> Fees and Charges </p>
       </li>
       <li class="list-group-item">
-        <img src="scroll.png" alt="" /> Settlements
+        <p>
+          <img src="transaction.png" alt="" />{" "}
+        </p>
+        <p> Transactions </p>
       </li>
       <li class="list-group-item">
-        <img src="chart-bar.png" alt="" /> Reports
-      </li>
-      <li class="list-group-item">Settings</li>
-      <li class="list-group-item">
-        <img src="sliders-h.png" alt="" /> Preferences
-      </li>
-      <li class="list-group-item">
-        <img src="badge-percent.png" alt="" /> Fees and Pricing
+        <p>
+          <img src="galaxy.png" alt="" />{" "}
+        </p>{" "}
+        <p> Services </p>
       </li>
       <li class="list-group-item">
-        <img src="clipboard-list.png" alt="" /> Audit Logs
+        <p>
+          {" "}
+          <img src="user-cog.png" alt="" />{" "}
+        </p>
+        <p>Service Accounts</p>
+      </li>
+      <li class="list-group-item">
+        <p>
+          <img src="scroll.png" alt="" />{" "}
+        </p>
+        <p> Settlements </p>
+      </li>
+      <li class="list-group-item">
+        <p>
+          {" "}
+          <img src="chart-bar.png" alt="" />
+        </p>{" "}
+        <p> Reports</p>
+      </li>
+      <li class="list-group-item category">Settings</li>
+      <li class="list-group-item">
+        <p>
+          {" "}
+          <img src="sliders-h.png" alt="" />{" "}
+        </p>
+        <p> Preferences </p>
+      </li>
+      <li class="list-group-item">
+        <p>
+          <img src="badge-percent.png" alt="" />
+        </p>
+        <p> Fees and Pricing </p>
+      </li>
+      <li class="list-group-item">
+        <p>
+          <img src="clipboard-list.png" alt="" />
+        </p>
+        <p>Audit Logs</p>
       </li>
     </ul>
   );
 };
 
 const userStyle = {
-  background: "#39CDCC",
-  opacity: 0.8,
+  background: "rgba(57, 205, 204, 0.06)",
 };
 
 export default Sidenav;

@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Navbar from "../Layout/Navbar";
 import Sidenav from "../Layout/Sidenav";
+import Pagination from "../Pagination";
 import MainContent from "./MainContent";
 
 const Dashboard = () => {
@@ -11,8 +12,9 @@ const Dashboard = () => {
         <section className="col-sm-3">
           <Sidenav />
         </section>
-        <section className="col-sm-9">
+        <section className="col-sm-9 container">
           <MainContent />
+          <Pagination />
         </section>
       </div>
     </Fragment>
