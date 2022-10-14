@@ -6,7 +6,7 @@
   height: 90vh;
 }
 
-input[type="email"] {
+.login-email {
   background: #ffffff;
   border: 2px solid rgba(84, 95, 125, 0.15) !important;
   border-radius: 5px;
@@ -15,7 +15,7 @@ input[type="email"] {
   box-sizing: border-box;
 }
 
-input[type="password"] {
+.login-pass {
   background: #ffffff;
   border: 2px solid rgba(84, 95, 125, 0.15) !important;
   border-radius: 5px;
@@ -112,6 +112,7 @@ article > ul {
   padding: 25px;
   background: #ffffff;
   box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  width: 100%;
 }
 .searchbar {
   width: 80%;
@@ -131,11 +132,17 @@ article > ul {
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+.dashboard {
+  height: 244vh;
+  width: 100%;
+  background: #fbfbfb;
+  margin: 10%;
+}
 .sidenav {
   background: #ffffff;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
-  width: 283px;
-  height: 1695px;
+  width: 80%;
 }
 .sidenav > :first-child {
   margin-top: 30px;
@@ -148,7 +155,7 @@ article > ul {
 
 .list-group-item {
   border: 0;
-  padding: 20px 10px;
+  padding: 15px 10px;
   margin-left: 30px !important;
   color: #213f7d;
   font-family: "Work Sans";
@@ -166,7 +173,7 @@ article > ul {
 }
 
 .list-group-item.category {
-  margin-bottom: -20px;
+  margin-bottom: -5px;
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
@@ -190,8 +197,12 @@ col-sm-3 > .card {
   font-style: normal;
 
   line-height: 28px;
-  margin: 40px 0;
+  margin-top: 100px;
+  margin-bottom: 70px;
   color: #213f7d;
+}
+.cards {
+  width: 98%;
 }
 .card-text.first {
   font-family: "Work Sans";
@@ -213,14 +224,14 @@ col-sm-3 > .card {
 
   color: #213f7d;
 }
-.table.dashboard {
+.table.dash {
   background: #ffffff;
   border: 1px solid rgba(33, 63, 125, 0.06);
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 50px;
-
+  width: 96%;
   height: 640px;
 }
 td {
@@ -279,9 +290,10 @@ th {
 }
 
 .paginate {
-  margin-top: 50px;
   display: flex;
   justify-content: space-between;
+  margin-top: 50px;
+  width: 95.5%;
 }
 
 .page-one,
@@ -345,4 +357,102 @@ th {
 .page-two > :nth-child(2) {
   opacity: 1;
   font-weight: 500;
+}
+
+.filter-form {
+  box-sizing: border-box;
+  z-index: 10;
+  width: 280px;
+  height: 740px;
+  background: #ffffff;
+  border: 1px solid rgba(84, 95, 125, 0.14);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  position: absolute;
+  top: 780px;
+  left: 540px;
+  padding: 50px 5px;
+}
+.filter-form > .form-group {
+  margin: 20px 5px;
+}
+
+.filter-form > div > label {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+
+  color: #545f7d;
+}
+
+.filter-form > .form-group > input,
+.filter-form > .form-group > select {
+  box-sizing: border-box;
+  background: #ffffff;
+  opacity: 0.2;
+  border: 1px solid #213f7d;
+  border-radius: 8px;
+
+  height: 50px;
+}
+
+.filter-button {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.filter-button > input {
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: transparent;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 16px;
+  width: 100px;
+  height: 40px;
+  /* identical to box height */
+
+  color: #545f7d;
+}
+
+.filter-button > :last-child {
+  background: #39cdcc;
+  border: 1px solid #39cdcc;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+}
+.actions {
+  box-sizing: border-box;
+  position: absolute;
+  width: 180px;
+  height: 130px;
+  left: 1450px;
+  top: 950px;
+
+  background: #ffffff;
+  border: 1px solid rgba(84, 95, 125, 0.04);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+}
+
+.card-body > p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #545f7d;
+}
+
+.card-body > p > img {
+  margin-right: 10px;
 }

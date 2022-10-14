@@ -3,7 +3,7 @@ import TableRow from "./TableRow";
 
 const Table = () => {
   return (
-    <table class="table dashboard">
+    <table class="table dash">
       <thead>
         <tr className="table-head">
           <th scope="col">
