@@ -1,6 +1,6 @@
 import React from "react";
 
-const Sidenav = () => {
+const UserSidenav = () => {
   return (
     <ul class="list-group sidenav">
       <li class="list-group-item">
@@ -146,8 +146,20 @@ const Sidenav = () => {
         </p>
         <p>Audit Logs</p>
       </li>
+      <li class="list-group-item">
+        <p>
+          <img src="tyre.png" alt="" />
+        </p>
+        <p>System Messages</p>
+      </li>
+      <li class="list-group-item">
+        <p>
+          <img src="sign-out.png" alt="" />
+        </p>
+        <p>Logout</p>
+      </li>
     </ul>
   );
 };
 
-export default Sidenav;
+export default UserSidenav;

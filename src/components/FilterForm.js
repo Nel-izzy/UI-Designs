@@ -2,7 +2,7 @@ import React from "react";
 
 const FilterForm = () => {
   return (
-    <form className="filter-form">
+    <form id="filter-form">
       <div class="form-group">
         <label for="org">Organization</label>
         <select class="form-control" id="org">

@@ -1,11 +1,18 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const AdminActions = () => {
+const AdminActions = ({ id }) => {
+  const navigate = useNavigate();
+
+  const onClick = () => {
+    navigate(`/users/${id}`);
+  };
   return (
-    <div class="card actions">
+    <div class="card" id="actions">
       <div class="card-body">
-        <p>
+        <p onClick={onClick}>
           <img src="view.png" alt="" />
+          {"  "}
           View Details
         </p>
         <p>
