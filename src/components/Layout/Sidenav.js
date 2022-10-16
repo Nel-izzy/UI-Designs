@@ -1,5 +1,25 @@
 import React from "react";
 import briefcase from "../../../src/images/briefcase.png";
+import caretUp from "../../../src/images/caret-1.png";
+import home from "../../../src/images/home.png";
+import userFriends from "../../../src/images/user-friends.png";
+import users from "../../../src/images/users.png";
+import sack from "../../../src/images/sack.png";
+import handshakeRegular from "../../../src/images/handshake-regular.png";
+import loan from "../../../src/images/loan.png";
+import coinSolid from "../../../src/images/coins-solid.png";
+import userCheck from "../../../src/images/user-check.png";
+import userTimes from "../../../src/images/user-times.png";
+import barChart from "../../../src/images/chart-bar.png";
+import galaxy from "../../../src/images/galaxy.png";
+import bank from "../../../src/images/bank.png";
+import transaction from "../../../src/images/transaction.png";
+import userCog from "../../../src/images/user-cog.png";
+import scroll from "../../../src/images/scroll.png";
+import slidersH from "../../../src/images/sliders-h.png";
+import badgePercent from "../../../src/images/badge-percent.png";
+import clipboardList from "../../../src/images/clipboard-list.png";
+import piggyBank from "../../../src/images/piggy-bank.png";
 
 const Sidenav = () => {
   return (
@@ -10,61 +30,61 @@ const Sidenav = () => {
         </p>{" "}
         <p> Switch Organization</p>{" "}
         <p>
-          <img src="caret-1.png" alt="" />
+          <img src={caretUp} alt="" />
         </p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="home.png" alt="" />
+          <img src={home} alt="" />
         </p>{" "}
         <p>Dashboard</p>
       </li>
       <li className="list-group-item category">Customers</li>
       <li className="list-group-item">
         <p>
-          <img src="user-friends.png" alt="" />
+          <img src={userFriends} alt="" />
         </p>{" "}
         <p>Users</p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="users.png" alt="" />
+          <img src={users} alt="" />
         </p>{" "}
         <p>Guarantors</p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="sack.png" alt="" height={16} />
+          <img src={sack} alt="" height={16} />
         </p>{" "}
         <p>Loans</p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="handshake-regular.png" alt="" />
+          <img src={handshakeRegular} alt="" />
         </p>{" "}
         <p> Decision Models</p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="piggy-bank.png" alt="" />
+          <img src={piggyBank} alt="" />
         </p>{" "}
         <p>Savings</p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="loan.png" alt="" />{" "}
+          <img src={loan} alt="" />{" "}
         </p>
         <p> Loan Requests</p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="user-check.png" alt="" />{" "}
+          <img src={userCheck} alt="" />{" "}
         </p>
         <p> Whitelist</p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="user-times.png" alt="" />{" "}
+          <img src={userTimes} alt="" />{" "}
         </p>
         <p> Karma</p>
       </li>
@@ -72,58 +92,58 @@ const Sidenav = () => {
       <li className="list-group-item">
         <p>
           {" "}
-          <img src="briefcase.png" alt="" />{" "}
+          <img src={briefcase} alt="" />{" "}
         </p>
         <p> Organization </p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="loan.png" alt="" />
+          <img src={loan} alt="" />
         </p>{" "}
         <p> Loan Products </p>
       </li>
       <li className="list-group-item">
         <p>
           {" "}
-          <img src="bank.png" alt="" height={16} />{" "}
+          <img src={bank} alt="" height={16} />{" "}
         </p>
         <p> Savings Products </p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="coins-solid.png" alt="" />
+          <img src={coinSolid} alt="" />
         </p>{" "}
         <p> Fees and Charges </p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="transaction.png" alt="" />{" "}
+          <img src={transaction} alt="" />{" "}
         </p>
         <p> Transactions </p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="galaxy.png" alt="" />{" "}
+          <img src={galaxy} alt="" />{" "}
         </p>{" "}
         <p> Services </p>
       </li>
       <li className="list-group-item">
         <p>
           {" "}
-          <img src="user-cog.png" alt="" />{" "}
+          <img src={userCog} alt="" />{" "}
         </p>
         <p>Service Accounts</p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="scroll.png" alt="" />{" "}
+          <img src={scroll} alt="" />{" "}
         </p>
         <p> Settlements </p>
       </li>
       <li className="list-group-item">
         <p>
           {" "}
-          <img src="chart-bar.png" alt="" />
+          <img src={barChart} alt="" />
         </p>{" "}
         <p> Reports</p>
       </li>
@@ -131,19 +151,19 @@ const Sidenav = () => {
       <li className="list-group-item">
         <p>
           {" "}
-          <img src="sliders-h.png" alt="" />{" "}
+          <img src={slidersH} alt="" />{" "}
         </p>
         <p> Preferences </p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="badge-percent.png" alt="" />
+          <img src={badgePercent} alt="" />
         </p>
         <p> Fees and Pricing </p>
       </li>
       <li className="list-group-item">
         <p>
-          <img src="clipboard-list.png" alt="" />
+          <img src={clipboardList} alt="" />
         </p>
         <p>Audit Logs</p>
       </li>

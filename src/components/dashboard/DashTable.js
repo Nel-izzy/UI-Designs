@@ -1,5 +1,6 @@
 import React from "react";
 import TableRow from "../TableRow";
+import filterResultsBtn from "../../images/filter-results-button.png";
 
 const Table = () => {
   return (
@@ -7,22 +8,22 @@ const Table = () => {
       <thead>
         <tr className="table-head">
           <th scope="col">
-            Organization <img src="filter-results-button.png" alt="" />
+            Organization <img src={filterResultsBtn} alt="" />
           </th>
           <th scope="col">
-            Username <img src="filter-results-button.png" alt="" />
+            Username <img src={filterResultsBtn} alt="" />
           </th>
           <th scope="col">
-            Email <img src="filter-results-button.png" alt="" />
+            Email <img src={filterResultsBtn} alt="" />
           </th>
           <th scope="col">
-            Phone number <img src="filter-results-button.png" alt="" />
+            Phone number <img src={filterResultsBtn} alt="" />
           </th>
           <th scope="col">
-            Date Joined <img src="filter-results-button.png" alt="" />
+            Date Joined <img src={filterResultsBtn} alt="" />
           </th>
           <th scope="col">
-            Status <img src="filter-results-button.png" alt="" />
+            Status <img src={filterResultsBtn} alt="" />
           </th>
         </tr>
       </thead>

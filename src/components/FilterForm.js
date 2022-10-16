@@ -3,46 +3,51 @@ import React from "react";
 const FilterForm = () => {
   return (
     <form id="filter-form">
-      <div class="form-group">
-        <label for="org">Organization</label>
-        <select class="form-control" id="org">
+      <div className="form-group">
+        <label htmlFor="filter-org">Organization</label>
+        <select className="form-control" id="filter-org">
           <option>Select</option>
         </select>
       </div>
-      <div class="form-group">
-        <label for="Email">Email address</label>
+      <div className="form-group">
+        <label htmlFor="filter-email">Email address</label>
         <input
           type="email"
-          class="form-control"
-          id="email"
+          className="form-control"
+          id="filter-email"
           placeholder="Enter email"
         />
       </div>
-      <div class="form-group">
-        <label for="password">Password</label>
+      <div className="form-group">
+        <label htmlFor="filter-password">Password</label>
         <input
           type="password"
-          class="form-control"
-          id="password"
+          className="form-control"
+          id="filter-password"
           placeholder="Password"
         />
       </div>
-      <div class="form-group">
-        <label for="date">Date </label>
-        <input type="date" class="form-control" id="date" placeholder="Date" />
+      <div className="form-group">
+        <label htmlFor="filter-date">Date </label>
+        <input
+          type="date"
+          className="form-control"
+          id="filter-date"
+          placeholder="Date"
+        />
       </div>
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
+      <div className="form-group">
+        <label htmlFor="filter-phone">Phone Number</label>
         <input
           type="phone"
-          class="form-control"
-          id="phone"
+          className="form-control"
+          id="filter-phone"
           placeholder="Phone"
         />
       </div>
-      <div class="form-group">
-        <label for="org">Status</label>
-        <select class="form-control" id="org">
+      <div className="form-group">
+        <label htmlFor="filter-status">Status</label>
+        <select className="form-control" id="filter-status">
           <option>Select</option>
         </select>
       </div>

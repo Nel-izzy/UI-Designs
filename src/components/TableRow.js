@@ -1,6 +1,8 @@
-import React, { Fragment } from "react";
+import React, { useState, Fragment } from "react";
 import Moment from "react-moment";
 import AdminActions from "./dashboard/AdminActions";
+import more from "../images/ic-more-vert.png";
+
 const TableRow = ({
   org,
   fullName,
@@ -11,36 +13,50 @@ const TableRow = ({
   color,
   background,
   width,
-  toggleShowActions,
+
   id,
 }) => {
-  return (
-    <Fragment>
-      <AdminActions id={id} />
-      <tr className="table-row">
-        <td>{org}</td>
-        <td>{fullName}</td>
-        <td>{email}</td>
-        <td>{phone.length > 15 ? phone.slice(0, -6) : phone}</td>
-        <td>
-          <Moment format="MMM Do YYYY, h:mm A">{date}</Moment>
-        </td>
-        <td className="status-dash">
-          <p
-            style={{
-              background,
-              width,
-            }}
-          >
-            <span style={{ color }}>{status}</span>
-          </p>
-        </td>
-        <td>
-          <img src="ic-more-vert.png" alt="" onClick={toggleShowActions} />
-        </td>
-      </tr>
-    </Fragment>
+  const [showActions, setShowActions] = useState(false);
+  const tableRow = (
+    <tr className="table-row">
+      <td>{org}</td>
+      <td>{fullName}</td>
+      <td>{email}</td>
+      <td>{phone.length > 15 ? phone.slice(0, -6) : phone}</td>
+      <td>
+        <Moment format="MMM Do YYYY, h:mm A">{date}</Moment>
+      </td>
+      <td className="status-dash">
+        <p
+          style={{
+            background,
+            width,
+          }}
+        >
+          <span style={{ color }}>{status}</span>
+        </p>
+      </td>
+      <td>
+        <img
+          src={more}
+          alt=""
+          onClick={() => setShowActions(!showActions)}
+          className="more"
+        />
+      </td>
+    </tr>
   );
+
+  if (showActions) {
+    return (
+      <Fragment>
+        <AdminActions id={id} />
+        {tableRow}
+      </Fragment>
+    );
+  } else {
+    return tableRow;
+  }
 };
 
 export default TableRow;

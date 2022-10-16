@@ -402,11 +402,11 @@ th {
   padding: 50px 5px;
   display: none;
 }
-.filter-form > .form-group {
+#filter-form > .form-group {
   margin: 20px 5px;
 }
 
-.filter-form > div > label {
+#filter-form > div > label {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
@@ -416,8 +416,8 @@ th {
   color: #545f7d;
 }
 
-.filter-form > .form-group > input,
-.filter-form > .form-group > select {
+#filter-form > .form-group > input,
+#filter-form > .form-group > select {
   box-sizing: border-box;
   background: #ffffff;
   opacity: 0.2;
@@ -463,10 +463,11 @@ th {
   position: absolute;
   width: 180px;
   height: 130px;
-  left: 1450px;
+  left: 1435px;
   top: 950px;
-  display: none;
 
+  padding-top: 10px;
+  padding-left: 10px;
   background: #ffffff;
   border: 1px solid rgba(84, 95, 125, 0.04);
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
@@ -648,4 +649,14 @@ th {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 50px;
+}
+.user-content {
+  height: 262.3vh;
+  width: 100%;
+  background: #fbfbfb;
+  margin: 10%;
+}
+
+.more {
+  cursor: pointer;
 }

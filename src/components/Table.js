@@ -1,29 +1,86 @@
 import React from "react";
 import TableRow from "./TableRow";
 import Spinner from "./Layout/Spinner";
+import filterResultsBtn from "../images/filter-results-button.png";
 
-const Table = ({ loading, users, toggleShowActions }) => {
+const Table = ({ loading, users }) => {
+  const toggleShowActions = () => {
+    var x = document.getElementById("actions");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  };
+
+  const toggleShowFilterForm = () => {
+    var x = document.getElementById("filter-form");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  };
+
+  users.length = 9;
+
   return (
     <table class="table dash">
       <thead>
         <tr className="table-head">
           <th scope="col">
-            Organization <img src="filter-results-button.png" alt="" />
+            Organization{" "}
+            <img
+              src={filterResultsBtn}
+              alt=""
+              onClick={toggleShowFilterForm}
+              className="more"
+            />
           </th>
           <th scope="col">
-            Username <img src="filter-results-button.png" alt="" />
+            Username{" "}
+            <img
+              src={filterResultsBtn}
+              alt=""
+              onClick={toggleShowFilterForm}
+              className="more"
+            />
           </th>
           <th scope="col">
-            Email <img src="filter-results-button.png" alt="" />
+            Email{" "}
+            <img
+              src={filterResultsBtn}
+              alt=""
+              onClick={toggleShowFilterForm}
+              className="more"
+            />
           </th>
           <th scope="col">
-            Phone number <img src="filter-results-button.png" alt="" />
+            Phone number{" "}
+            <img
+              src={filterResultsBtn}
+              alt=""
+              onClick={toggleShowFilterForm}
+              className="more"
+            />
           </th>
           <th scope="col">
-            Date Joined <img src="filter-results-button.png" alt="" />
+            Date Joined{" "}
+            <img
+              src={filterResultsBtn}
+              alt=""
+              onClick={toggleShowFilterForm}
+              className="more"
+            />
           </th>
           <th scope="col">
-            Status <img src="filter-results-button.png" alt="" />
+            Status{" "}
+            <img
+              src={filterResultsBtn}
+              alt=""
+              onClick={toggleShowFilterForm}
+              className="more"
+            />
           </th>
         </tr>
       </thead>
@@ -44,6 +101,7 @@ const Table = ({ loading, users, toggleShowActions }) => {
               width={80}
               toggleShowActions={toggleShowActions}
               id={user.id}
+              key={user.id}
             />
           ))
         )}

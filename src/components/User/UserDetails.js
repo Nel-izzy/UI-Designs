@@ -7,6 +7,7 @@ import UserSidenav from "./UserSidenav";
 
 const UserDetails = () => {
   const { id } = useParams();
+  console.log(id);
   return (
     <div className="dashboard user-details">
       <Navbar />

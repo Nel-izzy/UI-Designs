@@ -1,4 +1,8 @@
 import React from "react";
+import userIcon from "../images/users-icon.png";
+import activeUsers from "../images/active-users.png";
+import userLoans from "../images/users-loans.png";
+import userSavings from "../images/user-savings.png";
 
 const Cards = () => {
   return (
@@ -7,7 +11,7 @@ const Cards = () => {
         <div className="card">
           <div className="card-body">
             <p>
-              <img src="users-icon.png" alt="" />
+              <img src={userIcon} alt="" />
             </p>
             <p className="card-text first">USERS</p>
             <p className="card-text second">2,453</p>
@@ -19,7 +23,7 @@ const Cards = () => {
         <div className="card">
           <div className="card-body">
             <p>
-              <img src="active-users.png" alt="" />
+              <img src={activeUsers} alt="" />
             </p>
             <p className="card-text first">ACTIVE USERS</p>
             <p className="card-text second">2,453</p>
@@ -31,7 +35,7 @@ const Cards = () => {
         <div className="card">
           <div className="card-body">
             <p>
-              <img src="users-loans.png" alt="" />
+              <img src={userLoans} alt="" />
             </p>
             <p className="card-text first">USERS WITH LOANS</p>
             <p className="card-text second">12,453</p>
@@ -43,7 +47,7 @@ const Cards = () => {
         <div className="card">
           <div className="card-body">
             <p>
-              <img src="user-savings.png" alt="" />
+              <img src={userSavings} alt="" />
             </p>
             <p className="card-text first">USERS WITH SAVINGS</p>
             <p className="card-text second">102,453</p>

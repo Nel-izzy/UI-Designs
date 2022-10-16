@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Dashboard from "../dashboard/Dashboard";
+import UserDash from "./UserDash";
 import FilterForm from "../FilterForm";
 
 const Users = () => {
@@ -31,7 +31,7 @@ const Users = () => {
   return (
     <>
       <FilterForm />
-      <Dashboard users={users} loading={loading} />
+      <UserDash users={users} loading={loading} />
     </>
   );
 };

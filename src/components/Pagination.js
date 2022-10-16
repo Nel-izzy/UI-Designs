@@ -1,4 +1,7 @@
 import React from "react";
+import caretUp from "../images/caret-1.png";
+import caretBack from "../images/caret-back.png";
+import caretForward from "../images/caret-forward.png";
 
 const Pagination = () => {
   return (
@@ -7,7 +10,7 @@ const Pagination = () => {
         <div>Showing</div>
         <div>
           <p>
-            100 <img src="caret-1.png" alt="" />
+            100 <img src={caretUp} alt="" />
           </p>{" "}
         </div>
         <div>out of 100</div>
@@ -17,7 +20,7 @@ const Pagination = () => {
         <div>
           <p>
             {" "}
-            <img src="caret-back.png" alt="" />{" "}
+            <img src={caretBack} alt="" />{" "}
           </p>{" "}
         </div>
         <div>1</div>
@@ -28,7 +31,7 @@ const Pagination = () => {
         <div>16</div>
         <div>
           <p>
-            <img src="caret-forward.png" alt="" />
+            <img src={caretForward} alt="" />
           </p>
         </div>
       </article>

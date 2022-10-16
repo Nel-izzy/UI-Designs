@@ -1,26 +1,30 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import view from "../../images/view.png";
+import activateUser from "../../images/activate-user.png";
+import deleteFriend from "../../images/delete-friend.png";
 
 const AdminActions = ({ id }) => {
   const navigate = useNavigate();
 
   const onClick = () => {
     navigate(`/users/${id}`);
+    console.log(id);
+    // window.location.reload(false);
   };
   return (
     <div class="card" id="actions">
       <div class="card-body">
-        <p onClick={onClick}>
-          <img src="view.png" alt="" />
-          {"  "}
+        <p onClick={onClick} className="more">
+          <img src={view} alt="" />
           View Details
         </p>
-        <p>
-          <img src="delete-friend.png" alt="" />
+        <p className="more">
+          <img src={deleteFriend} alt="" />
           Blacklist User
         </p>
-        <p>
-          <img src="activate-user.png" alt="" />
+        <p className="more">
+          <img src={activateUser} alt="" />
           Activate User
         </p>
       </div>
