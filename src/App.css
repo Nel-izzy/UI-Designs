@@ -29,7 +29,6 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 55px;
-  letter-spacing: -0.04em;
   margin-bottom: 20px;
   color: #213f7d;
 }
@@ -148,7 +147,7 @@ article > ul {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 19px;
   display: flex;
   justify-content: flex-start;
@@ -227,6 +226,7 @@ col-sm-3 > .card {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 50px;
+  font-size: 14px;
   width: 96%;
   height: 640px;
   padding-left: 20px !important;
@@ -239,7 +239,7 @@ col-sm-3 > .card {
 .table-row > td:nth-of-type(1) {
   padding-left: 20px !important;
 }
-.table-row > td:nth-of-type(4) {
+/* .table-row > td:nth-of-type(4) {
   width: 170px;
 }
 .table-row > td:nth-of-type(3) {
@@ -250,7 +250,7 @@ col-sm-3 > .card {
 }
 .table-row > td:nth-of-type(2) {
   width: 150px;
-}
+} */
 
 td {
   padding-top: 28px !important;
@@ -288,7 +288,7 @@ td {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 16px;
   color: #545f7d;
 }
@@ -297,7 +297,7 @@ th {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 14px;
   padding-bottom: 40px !important;
   text-transform: uppercase;
@@ -345,7 +345,7 @@ th {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 19px;
   opacity: 0.6;
   color: #545f7d;
@@ -397,7 +397,7 @@ th {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 16px;
 
   color: #545f7d;
@@ -425,11 +425,10 @@ th {
   box-sizing: border-box;
   background: transparent;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 16px;
   width: 100px;
   height: 40px;
-  /* identical to box height */
 
   color: #545f7d;
 }
@@ -441,7 +440,7 @@ th {
   color: #ffffff;
   font-family: "Work Sans";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   line-height: 16px;
 }
@@ -450,7 +449,7 @@ th {
   position: absolute;
   width: 180px;
   height: 130px;
-  left: 1435px;
+  left: 1350px;
   top: 950px;
 
   padding-top: 10px;
@@ -488,7 +487,7 @@ th {
 }
 .basic-info > :last-child {
   margin-top: 12px;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .basic-info > :first-child > :not(:first-child) {
   margin-top: 25px;
@@ -499,7 +498,6 @@ th {
   font-weight: 600;
   font-size: 22px;
   line-height: 26px;
-  /* identical to box height */
 
   color: #213f7d;
 }
@@ -535,7 +533,6 @@ th {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
-  /* identical to box height */
 
   color: #213f7d;
 }
@@ -544,9 +541,8 @@ th {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
 
-  /* identical to box height */
   padding-bottom: 5px;
   text-align: center;
   border-bottom: 5px solid #39cdcc;
@@ -556,9 +552,7 @@ th {
   font-family: "SF Compact Text", "Work Sans";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-
-  /* identical to box height */
+  font-size: 15px;
 
   text-align: center;
 
@@ -591,9 +585,8 @@ th {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 19px;
-  /* identical to box height */
 
   color: #213f7d;
 }
@@ -601,7 +594,7 @@ th {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
 
@@ -616,7 +609,7 @@ th {
   font-family: "Work Sans";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 19px;
 
   color: #545f7d;
@@ -636,6 +629,7 @@ th {
   border-radius: 4px;
   box-sizing: border-box;
   margin-top: 50px;
+  font-size: 14px;
 }
 .user-content {
   height: 262.3vh;
