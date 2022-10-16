@@ -699,6 +699,7 @@ th {
   font-size: 16px;
   line-height: 19px;
   color: #545f7d;
+  cursor: pointer;
 }
 
 .action-buttons > :first-child {

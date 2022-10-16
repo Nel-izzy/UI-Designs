@@ -3,8 +3,10 @@ import spinner from "../Layout/spinner.gif";
 import backArrow from "../../images/back-arrow.png";
 import BasicInfo from "./BasicInfo";
 import FullDetails from "./FullDetails";
+import { useNavigate } from "react-router-dom";
 
 const MainUserContent = ({ id }) => {
+  const navigate = useNavigate();
   const [user, setUser] = useState(() => {
     const existingUser = localStorage.getItem("user");
 
@@ -50,7 +52,7 @@ const MainUserContent = ({ id }) => {
     return (
       <section>
         <div className="navigate-user">
-          <p>
+          <p onClick={() => navigate(-1)}>
             <img src={backArrow} alt="" /> Back to Users
           </p>
           <div className="action-buttons">
