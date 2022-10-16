@@ -12,7 +12,7 @@ const MainUserContent = ({ id }) => {
     if (existingUser) {
       return JSON.parse(existingUser);
     } else {
-      return [];
+      return null;
     }
   });
   const [loading, setLoading] = useState(false);

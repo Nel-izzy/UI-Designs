@@ -1,69 +1,92 @@
 import React from "react";
+import briefcase from "./userSideNav/images/briefcase.png";
+import caretUp from "./userSideNav/images/caret-1.png";
+import userFriends from "./userSideNav/images/user-friends.png";
+import users from "./userSideNav/images/users.png";
+import sack from "./userSideNav/images/sack.png";
+import handshakeRegular from "./userSideNav/images/handshake-regular.png";
+import loan from "./userSideNav/images/loan.png";
+import coinSolid from "./userSideNav/images/coins-solid.png";
+import userCheck from "./userSideNav/images/user-check.png";
+import userTimes from "./userSideNav/images/user-times.png";
+import bank from "./userSideNav/images/bank.png";
+import transaction from "./userSideNav/images/transaction.png";
+import userCog from "./userSideNav/images/user-cog.png";
+import scroll from "./userSideNav/images/scroll.png";
+import slidersH from "./userSideNav/images/sliders-h.png";
+import badgePercent from "./userSideNav/images/badge-percent.png";
+import clipboardList from "./userSideNav/images/clipboard-list.png";
+import tyre from "./userSideNav/images/tyre.png";
+import signOut from "./userSideNav/images/sign-out.png";
+import home from "./userSideNav/images/home.png";
+import galaxy from "./userSideNav/images/galaxy.png";
+import piggyBank from "./userSideNav/images/piggy-bank.png";
+import barChart from "./userSideNav/images/chart-bar.png";
 
 const UserSidenav = () => {
   return (
     <ul class="list-group sidenav">
       <li class="list-group-item">
         <p>
-          <img src="briefcase.png" alt="" height={16} />
+          <img src={briefcase} alt="" height={16} />
         </p>{" "}
         <p> Switch Organization</p>{" "}
         <p>
-          <img src="caret-1.png" alt="" />
+          <img src={caretUp} alt="" />
         </p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="home.png" alt="" />
+          <img src={home} alt="" />
         </p>{" "}
         <p>Dashboard</p>
       </li>
       <li class="list-group-item category">Customers</li>
       <li class="list-group-item">
         <p>
-          <img src="user-friends.png" alt="" />
+          <img src={userFriends} alt="" />
         </p>{" "}
         <p>Users</p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="users.png" alt="" />
+          <img src={users} alt="" />
         </p>{" "}
         <p>Guarantors</p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="sack.png" alt="" height={16} />
+          <img src={sack} alt="" height={16} />
         </p>{" "}
         <p>Loans</p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="handshake-regular.png" alt="" />
+          <img src={handshakeRegular} alt="" />
         </p>{" "}
         <p> Decision Models</p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="piggy-bank.png" alt="" />
+          <img src={piggyBank} alt="" />
         </p>{" "}
         <p>Savings</p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="loan.png" alt="" />{" "}
+          <img src={loan} alt="" />{" "}
         </p>
         <p> Loan Requests</p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="user-check.png" alt="" />{" "}
+          <img src={userCheck} alt="" />{" "}
         </p>
         <p> Whitelist</p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="user-times.png" alt="" />{" "}
+          <img src={userTimes} alt="" />{" "}
         </p>
         <p> Karma</p>
       </li>
@@ -71,58 +94,58 @@ const UserSidenav = () => {
       <li class="list-group-item">
         <p>
           {" "}
-          <img src="briefcase.png" alt="" />{" "}
+          <img src={briefcase} alt="" />{" "}
         </p>
         <p> Organization </p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="loan.png" alt="" />
+          <img src={loan} alt="" />
         </p>{" "}
         <p> Loan Products </p>
       </li>
       <li class="list-group-item">
         <p>
           {" "}
-          <img src="bank.png" alt="" height={16} />{" "}
+          <img src={bank} alt="" height={16} />{" "}
         </p>
         <p> Savings Products </p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="coins-solid.png" alt="" />
+          <img src={coinSolid} alt="" />
         </p>{" "}
         <p> Fees and Charges </p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="transaction.png" alt="" />{" "}
+          <img src={transaction} alt="" />{" "}
         </p>
         <p> Transactions </p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="galaxy.png" alt="" />{" "}
+          <img src={galaxy} alt="" />{" "}
         </p>{" "}
         <p> Services </p>
       </li>
       <li class="list-group-item">
         <p>
           {" "}
-          <img src="user-cog.png" alt="" />{" "}
+          <img src={userCog} alt="" />{" "}
         </p>
         <p>Service Accounts</p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="scroll.png" alt="" />{" "}
+          <img src={scroll} alt="" />{" "}
         </p>
         <p> Settlements </p>
       </li>
       <li class="list-group-item">
         <p>
           {" "}
-          <img src="chart-bar.png" alt="" />
+          <img src={barChart} alt="" />
         </p>{" "}
         <p> Reports</p>
       </li>
@@ -130,31 +153,31 @@ const UserSidenav = () => {
       <li class="list-group-item">
         <p>
           {" "}
-          <img src="sliders-h.png" alt="" />{" "}
+          <img src={slidersH} alt="" />{" "}
         </p>
         <p> Preferences </p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="badge-percent.png" alt="" />
+          <img src={badgePercent} alt="" />
         </p>
         <p> Fees and Pricing </p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="clipboard-list.png" alt="" />
+          <img src={clipboardList} alt="" />
         </p>
         <p>Audit Logs</p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="tyre.png" alt="" />
+          <img src={tyre} alt="" />
         </p>
         <p>System Messages</p>
       </li>
       <li class="list-group-item">
         <p>
-          <img src="sign-out.png" alt="" />
+          <img src={signOut} alt="" />
         </p>
         <p>Logout</p>
       </li>

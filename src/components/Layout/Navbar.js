@@ -1,4 +1,7 @@
 import { AiOutlineSearch } from "react-icons/ai";
+import Union from "../../../src/images/Union.png";
+import lendsqr from "../../../src/images/lendsqr.png";
+import image4 from "../../../src/images/image4.png";
 
 const Navbar = () => {
   return (
@@ -7,13 +10,13 @@ const Navbar = () => {
         <article className="col-sm-3">
           <p className="page-first-p">
             <img
-              src="Union.png"
+              src={Union}
               alt="Union"
               width={25}
               height="25px"
               className="img-first"
             />
-            <img src="lendsqr.png" alt="Lendsqr" width={138} height="36px" />
+            <img src={lendsqr} alt="Lendsqr" width={138} height="36px" />
           </p>
         </article>
         <article className="col-sm-4">
@@ -38,7 +41,7 @@ const Navbar = () => {
               <img src="vector.png" alt="" />{" "}
             </li>
             <li>
-              <img src="image 4.png" alt="" className="img-rounded" />{" "}
+              <img src={image4} alt="" className="img-rounded" />{" "}
             </li>
             <li>Adedeji</li>
             <li>
