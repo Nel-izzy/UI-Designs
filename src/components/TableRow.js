@@ -36,13 +36,8 @@ const TableRow = ({
           <span style={{ color }}>{status}</span>
         </p>
       </td>
-      <td>
-        <img
-          src={more}
-          alt=""
-          onClick={() => setShowActions(!showActions)}
-          className="more"
-        />
+      <td onClick={() => setShowActions(!showActions)}>
+        <img src={more} alt="" className="more" />
       </td>
     </tr>
   );

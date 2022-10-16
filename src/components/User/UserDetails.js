@@ -11,11 +11,12 @@ const UserDetails = () => {
   return (
     <div className="dashboard user-details">
       <Navbar />
+
       <div className="row ">
-        <section className="col-sm-3">
+        <section className="col-lg-3 col-md-6 col-sm-12">
           <UserSidenav />
         </section>
-        <section className="col-sm-9  container">
+        <section className="col-lg-9  col-md-12 col-sm-12 container">
           <MainUserContent id={id} />
         </section>
       </div>

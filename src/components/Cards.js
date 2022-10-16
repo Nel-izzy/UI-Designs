@@ -7,7 +7,7 @@ import userSavings from "../images/user-savings.png";
 const Cards = () => {
   return (
     <div className="row cards">
-      <div className="col-sm-3">
+      <div className="col-lg-3 col-md-6 col-sm-12">
         <div className="card">
           <div className="card-body">
             <p>
@@ -19,7 +19,7 @@ const Cards = () => {
         </div>
       </div>
 
-      <div className="col-sm-3">
+      <div className="col-lg-3 col-md-6 col-sm-12">
         <div className="card">
           <div className="card-body">
             <p>
@@ -31,7 +31,7 @@ const Cards = () => {
         </div>
       </div>
 
-      <div className="col-sm-3">
+      <div className="col-lg-3 col-md-6 col-sm-12">
         <div className="card">
           <div className="card-body">
             <p>
@@ -43,7 +43,7 @@ const Cards = () => {
         </div>
       </div>
 
-      <div className="col-sm-3">
+      <div className="col-lg-3 col-md-6 col-sm-12">
         <div className="card">
           <div className="card-body">
             <p>
