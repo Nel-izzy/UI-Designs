@@ -5,8 +5,13 @@
   align-items: center;
   height: 90vh;
 }
+.login-form {
+  padding: 100px 30px 200px 80px;
+  background: #ffffff;
+  box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+}
 
-.login-email {
+.login-form > form > .form-group > input {
   background: #ffffff;
   border: 2px solid rgba(84, 95, 125, 0.15) !important;
   border-radius: 5px;
@@ -15,37 +20,29 @@
   box-sizing: border-box;
 }
 
-.login-pass {
-  background: #ffffff;
-  border: 2px solid rgba(84, 95, 125, 0.15) !important;
-  border-radius: 5px;
-  width: 447px;
-  height: 50px;
-  margin-top: 20px !important;
+.login-form > form > .form-group > input[type="password"] {
+  margin-top: 30px !important;
 }
-#welcome {
-  font-family: "Avenir Next";
+.login-form > h3 {
+  font-family: "Avenir Next", "Work Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 55px;
-  /* identical to box height */
-
   letter-spacing: -0.04em;
-
+  margin-bottom: 20px;
   color: #213f7d;
 }
-#p-details {
-  font-family: "Avenir Next";
+.login-form > p {
+  font-family: "Avenir Next", "Work Sans";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
-  /* identical to box height */
-
   color: #545f7d;
+  margin-bottom: 100px;
 }
-#forgot {
+.login-form > form > p {
   font-family: "Avenir Next";
   font-style: normal;
   font-weight: 600;
@@ -53,48 +50,38 @@
   line-height: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
+  margin: 40px 0;
   color: #39cdcc;
 }
-button {
+.login-form > form > button {
   background: #39cdcc;
+  border: 0;
   border-radius: 8px;
-
   height: 48px;
-}
-button > span {
-  font-family: "Avenir Next";
+  font-family: "Avenir Next" "Work Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
-  /* identical to box height */
-
   text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  /* 6 */
-
   color: #ffffff;
+  width: 82%;
+  outline: 0;
 }
-.page-first-p {
+
+.login-page > :first-child {
   display: flex;
   justify-content: flex-start;
+  margin-top: 50px;
 }
 .img-first {
-  /* background: linear-gradient(31.06deg, #213f7d -30.58%, #39cdcc 116.98%); */
   margin-right: 10px;
 }
 .form-inline {
   display: flex;
   justify-content: flex-start;
 }
-/* .navbar-nav {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-} */
+
 nav > li {
   list-style-type: none;
 }

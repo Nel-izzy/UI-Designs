@@ -1,9 +1,7 @@
-import React, { Fragment } from "react";
-
 const LoginPage = () => {
   return (
-    <Fragment>
-      <p className="page-first-p">
+    <section className="container login-page">
+      <p>
         <img
           src="Union.png"
           alt="Union"
@@ -14,23 +12,37 @@ const LoginPage = () => {
         <img src="lendsqr.png" alt="Lendsqr" width={138} height="36px" />
       </p>
 
-      <section className="row Login">
-        <article className="col s12 m4">
+      <div className="row Login">
+        <article className="col-sm-6">
           <img src="pablo-sign-in.png" alt="" />
         </article>
-        <article className="col m3 s12"></article>
-        <article className="col m5 s12">
-          <h3 id="welcome">Welcome!</h3>
-          <p id="p-details">Enter Details below</p>
-          <input type="email" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <p id="forgot">Forgot Password?</p>
-          <button type="submit">
-            <span>LOG IN</span>{" "}
-          </button>
+        <article className="col-sm-6 login-form">
+          <h3>Welcome!</h3>
+          <p>Enter Details to login.</p>
+          <form>
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="login-email"
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                class="form-control"
+                id="login-password"
+                placeholder="Password"
+              />
+            </div>
+
+            <p>Forgot Password ?</p>
+            <button>LOG IN</button>
+          </form>
         </article>
-      </section>
-    </Fragment>
+      </div>
+    </section>
   );
 };
 
