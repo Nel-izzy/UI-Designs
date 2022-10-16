@@ -20,19 +20,17 @@ const LoginPage = () => {
           <h3>Welcome!</h3>
           <p>Enter Details to login.</p>
           <form>
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="email"
-                class="form-control"
-                id="login-email"
+                className="form-control"
                 placeholder="Email"
               />
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="password"
-                class="form-control"
-                id="login-password"
+                className="form-control"
                 placeholder="Password"
               />
             </div>

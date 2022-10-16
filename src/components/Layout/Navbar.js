@@ -2,6 +2,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import Union from "../../../src/images/Union.png";
 import lendsqr from "../../../src/images/lendsqr.png";
 import image4 from "../../../src/images/image4.png";
+import caretDropdown from "../../../src/images/caret.png";
 
 const Navbar = () => {
   return (
@@ -45,7 +46,7 @@ const Navbar = () => {
             </li>
             <li>Adedeji</li>
             <li>
-              <img src="caret.png" alt="" />
+              <img src={caretDropdown} alt="" />
             </li>
           </ul>
         </article>

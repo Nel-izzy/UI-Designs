@@ -4,15 +4,6 @@ import Spinner from "./Layout/Spinner";
 import filterResultsBtn from "../images/filter-results-button.png";
 
 const Table = ({ loading, users }) => {
-  const toggleShowActions = () => {
-    var x = document.getElementById("actions");
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-  };
-
   const toggleShowFilterForm = () => {
     var x = document.getElementById("filter-form");
     if (x.style.display === "none") {
@@ -25,7 +16,7 @@ const Table = ({ loading, users }) => {
   users.length = 9;
 
   return (
-    <table class="table dash">
+    <table className="table dash">
       <thead>
         <tr className="table-head">
           <th scope="col">
@@ -99,7 +90,6 @@ const Table = ({ loading, users }) => {
               color="rgb(84, 95, 125)"
               background="rgba(84, 95, 125, 0.06)"
               width={80}
-              toggleShowActions={toggleShowActions}
               id={user.id}
               key={user.id}
             />

@@ -1,4 +1,6 @@
 import React from "react";
+import ratingIconFilled from "../../images/star-filled.png";
+import ratingIcon from "../../images/star.png";
 
 const BasicInfo = ({ user }) => {
   const { firstName, lastName, avatar } = user.profile;
@@ -21,9 +23,9 @@ const BasicInfo = ({ user }) => {
           <p className="user-tier">
             User’s Tier
             <br />
-            <img src="star-filled.png" alt="" />
-            <img src="star.png" alt="" />
-            <img src="star.png" alt="" />{" "}
+            <img src={ratingIconFilled} alt="" />
+            <img src={ratingIcon} alt="" />
+            <img src={ratingIcon} alt="" />{" "}
           </p>{" "}
         </div>
         <div className="col-sm-3">

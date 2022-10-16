@@ -647,3 +647,7 @@ th {
 .more {
   cursor: pointer;
 }
+
+.email-addr {
+  font-size: 14px !important;
+}

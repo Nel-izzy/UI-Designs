@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Spinner from "../Layout/Spinner";
+import spinner from "../Layout/spinner.gif";
 
 import BasicInfo from "./BasicInfo";
 import FullDetails from "./FullDetails";
 
 const MainUserContent = ({ id }) => {
-  // const [user, setUser] = useState({});
   const [user, setUser] = useState(() => {
     const existingUser = localStorage.getItem("user");
 
@@ -42,7 +41,11 @@ const MainUserContent = ({ id }) => {
   };
 
   if (loading || user === null) {
-    return <Spinner />;
+    return (
+      <p>
+        <img src={spinner} alt="Loading..." />
+      </p>
+    );
   } else {
     return (
       <div>

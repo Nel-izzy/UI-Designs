@@ -9,8 +9,6 @@ const AdminActions = ({ id }) => {
 
   const onClick = () => {
     navigate(`/users/${id}`);
-    console.log(id);
-    // window.location.reload(false);
   };
   return (
     <div class="card" id="actions">

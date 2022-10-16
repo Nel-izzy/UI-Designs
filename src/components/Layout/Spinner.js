@@ -2,9 +2,11 @@ import spinner from "./spinner.gif";
 
 const Spinner = () => {
   return (
-    <div className="spinner">
-      <img src={spinner} alt="Loading..." />
-    </div>
+    <tr className="spinner">
+      <td>
+        <img src={spinner} alt="Loading..." />
+      </td>
+    </tr>
   );
 };
 

@@ -31,11 +31,13 @@ const FullDetails = ({ user }) => {
           </div>
           <div className="col-sm-2">
             <p>Phone Number</p>
-            <p>{phoneNumber}</p>
+            <p>
+              {phoneNumber.length > 15 ? phoneNumber.slice(0, -6) : phoneNumber}
+            </p>
           </div>
           <div className="col-sm-3">
             <p>Email Address</p>
-            <p>{email}</p>
+            <p className="email-addr">{email}</p>
           </div>
           <div className="col-sm-2">
             <p>Bvn</p>
@@ -84,7 +86,7 @@ const FullDetails = ({ user }) => {
         <article className="row">
           <div className="col-sm-3">
             <p>office email</p>
-            <p>{officeEmail}</p>
+            <p className="email-addr">{officeEmail}</p>
           </div>
           <div className="col-sm-3">
             <p>monthly income</p>
@@ -124,7 +126,11 @@ const FullDetails = ({ user }) => {
           </div>
           <div className="col-sm-3">
             <p>Phone Number</p>
-            <p>{guarantor.phoneNumber}</p>
+            <p>
+              {guarantor.phoneNumber.length > 15
+                ? guarantor.phoneNumber.slice(0, -6)
+                : guarantor.phoneNumber}
+            </p>
           </div>
           <div className="col-sm-3">
             <p>Email Address</p>

@@ -2,9 +2,9 @@ import React from "react";
 import TableRow from "../TableRow";
 import filterResultsBtn from "../../images/filter-results-button.png";
 
-const Table = () => {
+const DashTable = () => {
   return (
-    <table class="table home">
+    <table className="table home">
       <thead>
         <tr className="table-head">
           <th scope="col">
@@ -132,4 +132,4 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default DashTable;
