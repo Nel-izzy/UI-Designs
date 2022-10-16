@@ -19,7 +19,7 @@ const BasicInfo = ({ user }) => {
           </p>
           <p className="user-id">{accountNumber}</p>{" "}
         </div>
-        <div className="col-sm-2">
+        <div className="col-sm-3">
           <p className="user-tier">
             User’s Tier
             <br />
@@ -28,7 +28,7 @@ const BasicInfo = ({ user }) => {
             <img src={ratingIcon} alt="" />{" "}
           </p>{" "}
         </div>
-        <div className="col-sm-3">
+        <div className="col-sm-3 account">
           <p className="basic">₦{accountBalance}</p>
           <p className="user-bank">9912345678/Providus Bank</p>
         </div>

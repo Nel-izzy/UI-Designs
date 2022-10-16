@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import spinner from "../Layout/spinner.gif";
-
+import backArrow from "../../images/back-arrow.png";
 import BasicInfo from "./BasicInfo";
 import FullDetails from "./FullDetails";
 
@@ -48,10 +48,22 @@ const MainUserContent = ({ id }) => {
     );
   } else {
     return (
-      <div>
+      <section>
+        <div className="navigate-user">
+          <p>
+            <img src={backArrow} alt="" /> Back to Users
+          </p>
+          <div className="action-buttons">
+            <p>User Details </p>
+            <p>
+              <button>blacklist user</button>
+              <button>activate user</button>
+            </p>
+          </div>
+        </div>
         <BasicInfo user={user} />
         <FullDetails user={user} />
-      </div>
+      </section>
     );
   }
 };

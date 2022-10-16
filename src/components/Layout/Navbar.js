@@ -1,8 +1,8 @@
-import { AiOutlineSearch } from "react-icons/ai";
 import Union from "../../../src/images/Union.png";
 import lendsqr from "../../../src/images/lendsqr.png";
 import image4 from "../../../src/images/image4.png";
 import caretDropdown from "../../../src/images/caret.png";
+import searchIcon from "../../../src/images/search-icon.png";
 
 const Navbar = () => {
   return (
@@ -20,7 +20,7 @@ const Navbar = () => {
             <img src={lendsqr} alt="Lendsqr" width={138} height="36px" />
           </p>
         </article>
-        <article className="col-sm-4">
+        <article className="col-sm-4 search-form">
           <p>
             <input
               type="text"
@@ -28,7 +28,7 @@ const Navbar = () => {
               className="searchbar"
             />
             <button className="searchbar-btn">
-              <AiOutlineSearch />
+              <img src={searchIcon} alt="" />
             </button>
           </p>
         </article>

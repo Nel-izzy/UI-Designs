@@ -42,7 +42,7 @@
   margin-bottom: 100px;
 }
 .login-form > form > p {
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", "Work Sans";
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -104,23 +104,36 @@ article > ul {
   width: 80%;
   padding: 0 20px;
   height: 40px;
-  outline: none;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border: 0;
+  border: 1px solid #213f7d;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
   margin-top: 7px;
+  background: #ffffff;
+  opacity: 0.2;
+  outline: 0;
+}
+.searchbar::placeholder {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #545f7d;
+
+  opacity: 0.7;
 }
 .searchbar-btn {
-  height: 41px;
+  height: 40px;
   width: 56px;
+  border: 0;
   background-color: #39cdcc;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 .dashboard {
-  height: 244vh;
+  height: 271vh;
   width: 100%;
   background: #fbfbfb;
   margin: 10%;
@@ -197,7 +210,8 @@ col-sm-3 > .card {
   color: #213f7d;
 }
 .cards {
-  width: 98%;
+  width: 102%;
+  margin-left: -50px;
 }
 .card-text.first {
   font-family: "Work Sans";
@@ -227,30 +241,45 @@ col-sm-3 > .card {
   box-sizing: border-box;
   margin-top: 50px;
   font-size: 14px;
-  width: 96%;
+  width: 100%;
   height: 640px;
-  padding-left: 20px !important;
+  /* padding-left: 20px !important; */
+  margin-left: -40px;
 }
 
-.table.dash > thead > tr > :first-child {
-  width: 160px;
+/* .table > thead > tr > th:nth-child(3) {
+  width: 140px;
+}
+.table > thead > tr > th:nth-child(5) {
+  width: 140px;
+}
+
+.table > thead > tr > th:nth-child(1) {
+  width: 170px;
+}
+*/
+.table > thead > tr > th:nth-child(2) {
+  width: 150px;
+}
+.table > thead > tr > th:nth-child(1) {
+  width: 150px;
 }
 
 .table-row > td:nth-of-type(1) {
   padding-left: 20px !important;
 }
-/* .table-row > td:nth-of-type(4) {
-  width: 170px;
+.table-row > td:nth-of-type(4) {
+  width: 160px;
 }
-.table-row > td:nth-of-type(3) {
+/* .table-row > td:nth-of-type(3) {
   width: 150px;
-}
+} */
 .table-row > td:nth-of-type(5) {
   width: 200px;
 }
-.table-row > td:nth-of-type(2) {
+/* .table-row > td:nth-of-type(2) {
   width: 150px;
-} */
+}  */
 
 td {
   padding-top: 28px !important;
@@ -378,14 +407,14 @@ th {
   box-sizing: border-box;
   z-index: 10;
   width: 280px;
-  height: 740px;
+  height: 770px;
   background: #ffffff;
   border: 1px solid rgba(84, 95, 125, 0.14);
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
   position: absolute;
-  top: 780px;
-  left: 540px;
+  top: 750px;
+  left: 500px;
   padding: 50px 5px;
   display: none;
 }
@@ -449,8 +478,8 @@ th {
   position: absolute;
   width: 180px;
   height: 130px;
-  left: 1350px;
-  top: 950px;
+  left: 1308px;
+  top: 944px;
 
   padding-top: 10px;
   padding-left: 10px;
@@ -479,14 +508,14 @@ th {
   padding: 40px;
   width: 96%;
   height: 210px;
-  margin-top: 100px;
+  margin-top: 30px;
   background: #ffffff;
   border: 1px solid rgba(33, 63, 125, 0.06);
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
 }
 .basic-info > :last-child {
-  margin-top: 12px;
+  margin-top: 11px;
   margin-left: 20px;
 }
 .basic-info > :first-child > :not(:first-child) {
@@ -513,9 +542,10 @@ th {
 }
 .user-tier {
   height: 80px;
-  margin-left: -50px;
+  margin-left: -20px;
   padding-left: 30px;
-  margin-right: 50px;
+  margin-right: 80px;
+  margin-top: 5px;
   border-left: 1px solid rgba(84, 95, 125, 0.2);
   border-right: 1px solid rgba(84, 95, 125, 0.2);
   font-family: "Work Sans";
@@ -525,6 +555,13 @@ th {
   line-height: 16px;
 
   color: #545f7d;
+}
+
+.user-tier > img:nth-of-type(2) {
+  margin: 0 5px;
+}
+.user-tier > img:nth-of-type(1) {
+  margin-left: 10px;
 }
 
 .user-bank {
@@ -537,6 +574,9 @@ th {
   color: #213f7d;
 }
 
+.basic-info > article:first-child > :last-child {
+  margin-left: -80px !important;
+}
 .basic-info > article:last-child > :first-child > p {
   font-family: "Work Sans";
   font-style: normal;
@@ -616,7 +656,7 @@ th {
 }
 
 .user-details {
-  height: 262.5vh;
+  height: 291.5vh;
 }
 .spinner {
   margin-left: 20%;
@@ -632,7 +672,7 @@ th {
   font-size: 14px;
 }
 .user-content {
-  height: 262.3vh;
+  height: 291.7vh;
   width: 100%;
   background: #fbfbfb;
   margin: 10%;
@@ -642,6 +682,84 @@ th {
   cursor: pointer;
 }
 
-.email-addr {
-  font-size: 14px !important;
+.navigate-user {
+  padding-top: 50px;
+  width: 95%;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigate-user > :first-child {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #545f7d;
+}
+
+.action-buttons > :first-child {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #213f7d;
+}
+
+.action-buttons > p > :first-child {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid #e4033b;
+  border-radius: 8px;
+  background-color: #ffffff;
+  height: 40px;
+  width: 170px;
+  color: #e4033b;
+  margin-right: 20px;
+}
+
+.action-buttons > p > :last-child {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  background-color: #ffffff;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid #39cdcc;
+  border-radius: 8px;
+  color: #39cdcc;
+  height: 40px;
+  width: 170px;
+}
+
+/* Responsive web design media quries  */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
 }

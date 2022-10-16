@@ -23,7 +23,7 @@ const FullDetails = ({ user }) => {
       <section>
         <h3>Personal Information</h3>
         <article className="row">
-          <div className="col-sm-3">
+          <div className="col-sm-2">
             <p>full Name</p>
             <p>
               {firstName} {lastName}
@@ -35,7 +35,7 @@ const FullDetails = ({ user }) => {
               {phoneNumber.length > 15 ? phoneNumber.slice(0, -6) : phoneNumber}
             </p>
           </div>
-          <div className="col-sm-3">
+          <div className="col-sm-4">
             <p>Email Address</p>
             <p className="email-addr">{email}</p>
           </div>
@@ -49,7 +49,7 @@ const FullDetails = ({ user }) => {
           </div>
         </article>
         <article className="row">
-          <div className="col-sm-3">
+          <div className="col-sm-2">
             <p>marital status</p>
             <p>Single</p>
           </div>
@@ -57,7 +57,7 @@ const FullDetails = ({ user }) => {
             <p>children</p>
             <p>None</p>
           </div>
-          <div className="col-sm-3">
+          <div className="col-sm-4">
             <p>Type of residence</p>
             <p>Parent's Apartment</p>
           </div>
@@ -66,7 +66,7 @@ const FullDetails = ({ user }) => {
       <section>
         <h3>Education and Employment</h3>
         <article className="row">
-          <div className="col-sm-3">
+          <div className="col-sm-4">
             <p>level of education</p>
             <p>{level}</p>
           </div>
@@ -78,13 +78,13 @@ const FullDetails = ({ user }) => {
             <p>sector of employment</p>
             <p>{sector}</p>
           </div>
-          <div className="col-sm-3">
+          <div className="col-sm-2">
             <p>duration of employment</p>
             <p>{duration}</p>
           </div>
         </article>
         <article className="row">
-          <div className="col-sm-3">
+          <div className="col-sm-4">
             <p>office email</p>
             <p className="email-addr">{officeEmail}</p>
           </div>
@@ -92,7 +92,7 @@ const FullDetails = ({ user }) => {
             <p>monthly income</p>
             <p>₦{totalMonthlyIncome}</p>
           </div>
-          <div className="col-sm-3">
+          <div className="col-sm-4">
             <p>loan repayment</p>
             <p>₦{loanRepayment}</p>
           </div>
